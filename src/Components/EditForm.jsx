@@ -3,7 +3,6 @@ import React from 'react'
 export default function EditForm(props) {
   return (
     <>
-          {!props.formFlag && (
         <form>
           <label htmlFor="todo">編集モード:</label>
           <br></br>
@@ -24,7 +23,6 @@ export default function EditForm(props) {
             編集完了
           </button>
         </form>
-      )}
     </>
   )
 }

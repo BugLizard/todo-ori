@@ -143,20 +143,21 @@ function App() {
 
   return (
     <>
-      {/* 通常モード */}
+    {formFlag ?
+      // 通常モード
       <NormalForm 
-        formFlag={formFlag}
         formText={formText}
         setFormText={setFormText}
         onClickSetTodo={onClickSetTodo}
       />
-      {/* 編集モード */}
+      :
+      //編集モード
       <EditForm 
-        formFlag={formFlag}
         formText={formText}
         setFormText={setFormText}
         onClickEditComplete={onClickEditComplete}
       />
+    }
       {/* リスト */}
       <UntouchedList
         todos={todos}

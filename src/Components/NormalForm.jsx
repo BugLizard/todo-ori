@@ -3,7 +3,6 @@ import React from 'react'
 export default function NormalForm(props) {
   return (
     <>
-    {props.formFlag && (
       <form>
         <label htmlFor="todo">Todo:</label>
         <br></br>
@@ -24,7 +23,6 @@ export default function NormalForm(props) {
           追加
         </button>
       </form>
-    )}
     </>
   )
 }
