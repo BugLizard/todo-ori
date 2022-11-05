@@ -15,6 +15,15 @@ export default function EditForm(props) {
               props.setFormText(e.target.value)
             }}
           />
+          <br/>
+          <textarea 
+            name='formDetail'
+            placeholder='詳細'
+            value={props.formTextDetail}
+            onChange={(e) => {
+              props.setFormTextDetail(e.target.value)
+            }}
+          />
           <button
             className="formAddButton"
             type="submit"
